@@ -9,7 +9,7 @@ import { BookingItem } from "../../interface"; // Ensure this path is correct
 const BookingList: React.FC = () => {
   const dispatch = useDispatch();
   const bookings: BookingItem[] = useSelector(
-    (state: RootState) => state.bookSlice.bookItems
+    (state: RootState) => state.book.bookItems
   );
 
   const handleCancelBooking = (booking: BookingItem) => {
